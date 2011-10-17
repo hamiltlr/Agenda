@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844B91D8144CBECD00F00A7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D7144CBECD00F00A7C /* UIKit.framework */; };
+		844B91DA144CBECD00F00A7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D9144CBECD00F00A7C /* Foundation.framework */; };
+		844B91DC144CBECD00F00A7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91DB144CBECD00F00A7C /* CoreGraphics.framework */; };
+		844B91E2144CBECD00F00A7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844B91E0144CBECD00F00A7C /* InfoPlist.strings */; };
+		844B91E4144CBECD00F00A7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B91E3144CBECD00F00A7C /* main.m */; };
+		844B91E8144CBECD00F00A7C /* Agenda_2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B91E7144CBECD00F00A7C /* Agenda_2AppDelegate.m */; };
+		844B91EB144CBECD00F00A7C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B91E9144CBECD00F00A7C /* MainWindow.xib */; };
+		844B91EE144CBECE00F00A7C /* Agenda_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B91ED144CBECE00F00A7C /* Agenda_2ViewController.m */; };
+		844B91F1144CBECE00F00A7C /* Agenda_2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B91EF144CBECE00F00A7C /* Agenda_2ViewController.xib */; };
+		844B91F9144CBECE00F00A7C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91F8144CBECE00F00A7C /* SenTestingKit.framework */; };
+		844B91FA144CBECE00F00A7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D7144CBECD00F00A7C /* UIKit.framework */; };
+		844B91FB144CBECE00F00A7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D9144CBECD00F00A7C /* Foundation.framework */; };
+		844B91FC144CBECE00F00A7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91DB144CBECD00F00A7C /* CoreGraphics.framework */; };
+		844B9204144CBECE00F00A7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844B9202144CBECE00F00A7C /* InfoPlist.strings */; };
+		844B9206144CBECE00F00A7C /* Agenda_2Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 844B9205144CBECE00F00A7C /* Agenda_2Tests.h */; };
+		844B9208144CBECE00F00A7C /* Agenda_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B9207144CBECE00F00A7C /* Agenda_2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		844B91FD144CBECE00F00A7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844B91CA144CBECD00F00A7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844B91D2144CBECD00F00A7C;
+			remoteInfo = "Agenda 2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844B91D3144CBECD00F00A7C /* Agenda 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agenda 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		844B91D7144CBECD00F00A7C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		844B91D9144CBECD00F00A7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		844B91DB144CBECD00F00A7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		844B91DF144CBECD00F00A7C /* Agenda 2-Info.plist */ = {isa = PBXFileReference; path = "Agenda 2-Info.plist"; sourceTree = "<group>"; };
+		844B91E1144CBECD00F00A7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		844B91E3144CBECD00F00A7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		844B91E5144CBECD00F00A7C /* Agenda 2-Prefix.pch */ = {isa = PBXFileReference; path = "Agenda 2-Prefix.pch"; sourceTree = "<group>"; };
+		844B91E6144CBECD00F00A7C /* Agenda_2AppDelegate.h */ = {isa = PBXFileReference; path = Agenda_2AppDelegate.h; sourceTree = "<group>"; };
+		844B91E7144CBECD00F00A7C /* Agenda_2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agenda_2AppDelegate.m; sourceTree = "<group>"; };
+		844B91EA144CBECD00F00A7C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		844B91EC144CBECE00F00A7C /* Agenda_2ViewController.h */ = {isa = PBXFileReference; path = Agenda_2ViewController.h; sourceTree = "<group>"; };
+		844B91ED144CBECE00F00A7C /* Agenda_2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agenda_2ViewController.m; sourceTree = "<group>"; };
+		844B91F0144CBECE00F00A7C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Agenda_2ViewController.xib; sourceTree = "<group>"; };
+		844B91F7144CBECE00F00A7C /* Agenda 2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Agenda 2Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		844B91F8144CBECE00F00A7C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		844B9201144CBECE00F00A7C /* Agenda 2Tests-Info.plist */ = {isa = PBXFileReference; path = "Agenda 2Tests-Info.plist"; sourceTree = "<group>"; };
+		844B9203144CBECE00F00A7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		844B9205144CBECE00F00A7C /* Agenda_2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Agenda_2Tests.h; sourceTree = "<group>"; };
+		844B9207144CBECE00F00A7C /* Agenda_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agenda_2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		844B91D0144CBECD00F00A7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B91D8144CBECD00F00A7C /* UIKit.framework in Frameworks */,
+				844B91DA144CBECD00F00A7C /* Foundation.framework in Frameworks */,
+				844B91DC144CBECD00F00A7C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844B91F3144CBECE00F00A7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B91F9144CBECE00F00A7C /* SenTestingKit.framework in Frameworks */,
+				844B91FA144CBECE00F00A7C /* UIKit.framework in Frameworks */,
+				844B91FB144CBECE00F00A7C /* Foundation.framework in Frameworks */,
+				844B91FC144CBECE00F00A7C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844B91C8144CBECD00F00A7C = {
+			isa = PBXGroup;
+			children = (
+				844B91DD144CBECD00F00A7C /* Agenda 2 */,
+				844B91FF144CBECE00F00A7C /* Agenda 2Tests */,
+				844B91D6144CBECD00F00A7C /* Frameworks */,
+				844B91D4144CBECD00F00A7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		844B91D4144CBECD00F00A7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844B91D3144CBECD00F00A7C /* Agenda 2.app */,
+				844B91F7144CBECE00F00A7C /* Agenda 2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		844B91D6144CBECD00F00A7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844B91D7144CBECD00F00A7C /* UIKit.framework */,
+				844B91D9144CBECD00F00A7C /* Foundation.framework */,
+				844B91DB144CBECD00F00A7C /* CoreGraphics.framework */,
+				844B91F8144CBECE00F00A7C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		844B91DD144CBECD00F00A7C /* Agenda 2 */ = {
+			isa = PBXGroup;
+			children = (
+				844B91E6144CBECD00F00A7C /* Agenda_2AppDelegate.h */,
+				844B91E7144CBECD00F00A7C /* Agenda_2AppDelegate.m */,
+				844B91E9144CBECD00F00A7C /* MainWindow.xib */,
+				844B91EC144CBECE00F00A7C /* Agenda_2ViewController.h */,
+				844B91ED144CBECE00F00A7C /* Agenda_2ViewController.m */,
+				844B91EF144CBECE00F00A7C /* Agenda_2ViewController.xib */,
+				844B91DE144CBECD00F00A7C /* Supporting Files */,
+			);
+			path = "Agenda 2";
+			sourceTree = "<group>";
+		};
+		844B91DE144CBECD00F00A7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844B91DF144CBECD00F00A7C /* Agenda 2-Info.plist */,
+				844B91E0144CBECD00F00A7C /* InfoPlist.strings */,
+				844B91E3144CBECD00F00A7C /* main.m */,
+				844B91E5144CBECD00F00A7C /* Agenda 2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		844B91FF144CBECE00F00A7C /* Agenda 2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				844B9205144CBECE00F00A7C /* Agenda_2Tests.h */,
+				844B9207144CBECE00F00A7C /* Agenda_2Tests.m */,
+				844B9200144CBECE00F00A7C /* Supporting Files */,
+			);
+			path = "Agenda 2Tests";
+			sourceTree = "<group>";
+		};
+		844B9200144CBECE00F00A7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844B9201144CBECE00F00A7C /* Agenda 2Tests-Info.plist */,
+				844B9202144CBECE00F00A7C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		844B91D2144CBECD00F00A7C /* Agenda 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844B920B144CBECE00F00A7C /* Build configuration list for PBXNativeTarget "Agenda 2" */;
+			buildPhases = (
+				844B91CF144CBECD00F00A7C /* Sources */,
+				844B91D0144CBECD00F00A7C /* Frameworks */,
+				844B91D1144CBECD00F00A7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agenda 2";
+			productName = "Agenda 2";
+			productReference = 844B91D3144CBECD00F00A7C /* Agenda 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		844B91F6144CBECE00F00A7C /* Agenda 2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844B920E144CBECE00F00A7C /* Build configuration list for PBXNativeTarget "Agenda 2Tests" */;
+			buildPhases = (
+				844B91F2144CBECE00F00A7C /* Sources */,
+				844B91F3144CBECE00F00A7C /* Frameworks */,
+				844B91F4144CBECE00F00A7C /* Resources */,
+				844B91F5144CBECE00F00A7C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				844B91FE144CBECE00F00A7C /* PBXTargetDependency */,
+			);
+			name = "Agenda 2Tests";
+			productName = "Agenda 2Tests";
+			productReference = 844B91F7144CBECE00F00A7C /* Agenda 2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		844B91CA144CBECD00F00A7C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 844B91CD144CBECD00F00A7C /* Build configuration list for PBXProject "Agenda 2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 844B91C8144CBECD00F00A7C;
+			productRefGroup = 844B91D4144CBECD00F00A7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				844B91D2144CBECD00F00A7C /* Agenda 2 */,
+				844B91F6144CBECE00F00A7C /* Agenda 2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		844B91D1144CBECD00F00A7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B91E2144CBECD00F00A7C /* InfoPlist.strings in Resources */,
+				844B91EB144CBECD00F00A7C /* MainWindow.xib in Resources */,
+				844B91F1144CBECE00F00A7C /* Agenda_2ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844B91F4144CBECE00F00A7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B9204144CBECE00F00A7C /* InfoPlist.strings in Resources */,
+				844B9206144CBECE00F00A7C /* Agenda_2Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		844B91F5144CBECE00F00A7C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		844B91CF144CBECD00F00A7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B91E4144CBECD00F00A7C /* main.m in Sources */,
+				844B91E8144CBECD00F00A7C /* Agenda_2AppDelegate.m in Sources */,
+				844B91EE144CBECE00F00A7C /* Agenda_2ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844B91F2144CBECE00F00A7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B9208144CBECE00F00A7C /* Agenda_2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		844B91FE144CBECE00F00A7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844B91D2144CBECD00F00A7C /* Agenda 2 */;
+			targetProxy = 844B91FD144CBECE00F00A7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		844B91E0144CBECD00F00A7C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844B91E1144CBECD00F00A7C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		844B91E9144CBECD00F00A7C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844B91EA144CBECD00F00A7C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		844B91EF144CBECE00F00A7C /* Agenda_2ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844B91F0144CBECE00F00A7C /* en */,
+			);
+			name = Agenda_2ViewController.xib;
+			sourceTree = "<group>";
+		};
+		844B9202144CBECE00F00A7C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844B9203144CBECE00F00A7C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		844B9209144CBECE00F00A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		844B920A144CBECE00F00A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		844B920C144CBECE00F00A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Agenda 2/Agenda 2-Prefix.pch";
+				INFOPLIST_FILE = "Agenda 2/Agenda 2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		844B920D144CBECE00F00A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Agenda 2/Agenda 2-Prefix.pch";
+				INFOPLIST_FILE = "Agenda 2/Agenda 2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		844B920F144CBECE00F00A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Agenda 2.app/Agenda 2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Agenda 2/Agenda 2-Prefix.pch";
+				INFOPLIST_FILE = "Agenda 2Tests/Agenda 2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		844B9210144CBECE00F00A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Agenda 2.app/Agenda 2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Agenda 2/Agenda 2-Prefix.pch";
+				INFOPLIST_FILE = "Agenda 2Tests/Agenda 2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		844B91CD144CBECD00F00A7C /* Build configuration list for PBXProject "Agenda 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844B9209144CBECE00F00A7C /* Debug */,
+				844B920A144CBECE00F00A7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844B920B144CBECE00F00A7C /* Build configuration list for PBXNativeTarget "Agenda 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844B920C144CBECE00F00A7C /* Debug */,
+				844B920D144CBECE00F00A7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		844B920E144CBECE00F00A7C /* Build configuration list for PBXNativeTarget "Agenda 2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844B920F144CBECE00F00A7C /* Debug */,
+				844B9210144CBECE00F00A7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 844B91CA144CBECD00F00A7C /* Project object */;
+}
