@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84239F9914F6D3CC0098A8B4 /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 84239F9814F6D3CC0098A8B4 /* checkbox.png */; };
+		842D9902151D1DC8007A3DCD /* 108-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 842D9901151D1DC8007A3DCD /* 108-badge.png */; };
+		842D9907151D266E007A3DCD /* about-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 842D9906151D266E007A3DCD /* about-icon.png */; };
+		844185641518023D001FA120 /* Default-iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844185631518023D001FA120 /* Default-iphone@2x.png */; };
 		844B91D8144CBECD00F00A7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D7144CBECD00F00A7C /* UIKit.framework */; };
 		844B91DA144CBECD00F00A7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D9144CBECD00F00A7C /* Foundation.framework */; };
 		844B91DC144CBECD00F00A7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91DB144CBECD00F00A7C /* CoreGraphics.framework */; };
@@ -14,8 +18,6 @@
 		844B91E4144CBECD00F00A7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B91E3144CBECD00F00A7C /* main.m */; };
 		844B91E8144CBECD00F00A7C /* Agenda_2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B91E7144CBECD00F00A7C /* Agenda_2AppDelegate.m */; };
 		844B91EB144CBECD00F00A7C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B91E9144CBECD00F00A7C /* MainWindow.xib */; };
-		844B91EE144CBECE00F00A7C /* Agenda_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B91ED144CBECE00F00A7C /* Agenda_2ViewController.m */; };
-		844B91F1144CBECE00F00A7C /* Agenda_2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B91EF144CBECE00F00A7C /* Agenda_2ViewController.xib */; };
 		844B91F9144CBECE00F00A7C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91F8144CBECE00F00A7C /* SenTestingKit.framework */; };
 		844B91FA144CBECE00F00A7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D7144CBECD00F00A7C /* UIKit.framework */; };
 		844B91FB144CBECE00F00A7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D9144CBECD00F00A7C /* Foundation.framework */; };
@@ -23,6 +25,63 @@
 		844B9204144CBECE00F00A7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844B9202144CBECE00F00A7C /* InfoPlist.strings */; };
 		844B9206144CBECE00F00A7C /* Agenda_2Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 844B9205144CBECE00F00A7C /* Agenda_2Tests.h */; };
 		844B9208144CBECE00F00A7C /* Agenda_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B9207144CBECE00F00A7C /* Agenda_2Tests.m */; };
+		845EA86C1468903B00F93DFF /* Monday.m in Sources */ = {isa = PBXBuildFile; fileRef = 845EA86A1468903B00F93DFF /* Monday.m */; };
+		845EA86D1468903B00F93DFF /* Monday.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845EA86B1468903B00F93DFF /* Monday.xib */; };
+		845EA8711468906200F93DFF /* Tuesday.m in Sources */ = {isa = PBXBuildFile; fileRef = 845EA86F1468906200F93DFF /* Tuesday.m */; };
+		845EA8721468906200F93DFF /* Tuesday.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845EA8701468906200F93DFF /* Tuesday.xib */; };
+		8468F35F14795A2A002B846E /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8468F35E14795A2A002B846E /* TPKeyboardAvoidingScrollView.m */; };
+		848C0D2514A641DF00B25E10 /* 29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C0D1D14A641DF00B25E10 /* 29x29.png */; };
+		848C0D2614A641DF00B25E10 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C0D1E14A641DF00B25E10 /* 57x57.png */; };
+		848C0D2714A641DF00B25E10 /* 72x75.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C0D1F14A641DF00B25E10 /* 72x75.png */; };
+		848C0D2814A641DF00B25E10 /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C0D2014A641DF00B25E10 /* 114x114.png */; };
+		848C0D2914A641DF00B25E10 /* 512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C0D2114A641DF00B25E10 /* 512x512.png */; };
+		848C0D2A14A641DF00B25E10 /* Default-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C0D2214A641DF00B25E10 /* Default-ipad.png */; };
+		848C0D2B14A641DF00B25E10 /* Default-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 848C0D2314A641DF00B25E10 /* Default-iphone.png */; };
+		8493285614E6E32E00861227 /* TeachersDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 8493285414E6E32E00861227 /* TeachersDetails.m */; };
+		8493285714E6E32E00861227 /* TeachersDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8493285514E6E32E00861227 /* TeachersDetails.xib */; };
+		8493285B14E6E4A200861227 /* AddTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8493285914E6E4A200861227 /* AddTeacher.m */; };
+		8493285C14E6E4A200861227 /* AddTeacher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8493285A14E6E4A200861227 /* AddTeacher.xib */; };
+		84A5FA801490270A004A56C0 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A5FA7F1490270A004A56C0 /* 19-gear.png */; };
+		84A5FA821490279B004A56C0 /* 83-calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A5FA811490279B004A56C0 /* 83-calendar.png */; };
+		84A5FA84149027FB004A56C0 /* 90-life-buoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A5FA83149027FB004A56C0 /* 90-life-buoy.png */; };
+		84A5FA8914902FFA004A56C0 /* SchedualTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5FA8714902FFA004A56C0 /* SchedualTableViewController.m */; };
+		84A5FA8A14902FFA004A56C0 /* SchedualTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5FA8814902FFA004A56C0 /* SchedualTableViewController.xib */; };
+		84ACCB7D14884D0300EA305D /* 117-todo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACCB7914884D0300EA305D /* 117-todo.png */; };
+		84ACCB7E14884D0300EA305D /* 123-id-card.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACCB7A14884D0300EA305D /* 123-id-card.png */; };
+		84ACCB7F14884D0300EA305D /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACCB7B14884D0300EA305D /* 179-notepad.png */; };
+		84ACCB8014884D0300EA305D /* 180-stickynote.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACCB7C14884D0300EA305D /* 180-stickynote.png */; };
+		84ACCB851489947900EA305D /* classListTabIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACCB841489947900EA305D /* classListTabIcon.png */; };
+		84B0CA0A14D8AE4100FB36B4 /* leftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B0CA0814D8AE4100FB36B4 /* leftArrow.png */; };
+		84B0CA0B14D8AE4100FB36B4 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B0CA0914D8AE4100FB36B4 /* rightArrow.png */; };
+		84B3B70D14EB2661001DEAA5 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B70B14EB2661001DEAA5 /* Settings.m */; };
+		84B3B70E14EB2661001DEAA5 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B3B70C14EB2661001DEAA5 /* Settings.xib */; };
+		84BBB7B41470868E005246E8 /* Wednesday.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BBB7B21470868E005246E8 /* Wednesday.m */; };
+		84BBB7B51470868E005246E8 /* Wednesday.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BBB7B31470868E005246E8 /* Wednesday.xib */; };
+		84BBB7BA147087EF005246E8 /* Thursday.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BBB7B8147087EF005246E8 /* Thursday.m */; };
+		84BBB7BB147087EF005246E8 /* Thursday.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BBB7B9147087EF005246E8 /* Thursday.xib */; };
+		84BBB7BF14708892005246E8 /* Friday.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BBB7BD14708892005246E8 /* Friday.m */; };
+		84BBB7C014708892005246E8 /* Friday.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BBB7BE14708892005246E8 /* Friday.xib */; };
+		84BBB7C414708959005246E8 /* Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BBB7C214708959005246E8 /* Other.m */; };
+		84BBB7C514708959005246E8 /* Other.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BBB7C314708959005246E8 /* Other.xib */; };
+		84BE1060148D819F0082AA5B /* Teachers.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE105E148D819F0082AA5B /* Teachers.m */; };
+		84BE1061148D819F0082AA5B /* Teachers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BE105F148D819F0082AA5B /* Teachers.xib */; };
+		84BE1065148D81A60082AA5B /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE1063148D81A60082AA5B /* Notes.m */; };
+		84BE1066148D81A60082AA5B /* Notes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BE1064148D81A60082AA5B /* Notes.xib */; };
+		84BE106F148D81B90082AA5B /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE106D148D81B90082AA5B /* About.m */; };
+		84BE1070148D81B90082AA5B /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BE106E148D81B90082AA5B /* About.xib */; };
+		84C439D514561E54005D067E /* Agenda_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C439D314561E54005D067E /* Agenda_2ViewController.m */; };
+		84C439D614561E54005D067E /* Agenda_2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C439D414561E54005D067E /* Agenda_2ViewController.xib */; };
+		84C665811493E49600A9AA36 /* Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6657F1493E49600A9AA36 /* Help.m */; };
+		84C665821493E49600A9AA36 /* Help.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C665801493E49600A9AA36 /* Help.xib */; };
+		84D712491492E899001F90F5 /* ScheduleClassDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D712471492E899001F90F5 /* ScheduleClassDetails.m */; };
+		84D7124A1492E899001F90F5 /* ScheduleClassDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D712481492E899001F90F5 /* ScheduleClassDetails.xib */; };
+		84DC169F14D89C920066E859 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DC169E14D89C920066E859 /* MessageUI.framework */; };
+		84EBCA2D15163A4C0030F77C /* QuickLinksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EBCA2B15163A4C0030F77C /* QuickLinksTableViewController.m */; };
+		84EBCA2E15163A4C0030F77C /* QuickLinksTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EBCA2C15163A4C0030F77C /* QuickLinksTableViewController.xib */; };
+		84EBCA3215163A800030F77C /* QuickLinksDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EBCA3015163A800030F77C /* QuickLinksDetails.m */; };
+		84EBCA3315163A800030F77C /* QuickLinksDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EBCA3115163A800030F77C /* QuickLinksDetails.xib */; };
+		84EFE1A614DB4CB700235E35 /* AddModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EFE1A414DB4CB700235E35 /* AddModalView.m */; };
+		84EFE1A714DB4CB700235E35 /* AddModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EFE1A514DB4CB700235E35 /* AddModalView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,26 +95,104 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84239F9814F6D3CC0098A8B4 /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox.png; path = ../checkbox.png; sourceTree = "<group>"; };
+		842D9901151D1DC8007A3DCD /* 108-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "108-badge.png"; path = "../108-badge.png"; sourceTree = "<group>"; };
+		842D9906151D266E007A3DCD /* about-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-icon.png"; sourceTree = "<group>"; };
+		844185631518023D001FA120 /* Default-iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-iphone@2x.png"; sourceTree = "<group>"; };
 		844B91D3144CBECD00F00A7C /* Agenda 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agenda 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B91D7144CBECD00F00A7C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		844B91D9144CBECD00F00A7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		844B91DB144CBECD00F00A7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		844B91DF144CBECD00F00A7C /* Agenda 2-Info.plist */ = {isa = PBXFileReference; path = "Agenda 2-Info.plist"; sourceTree = "<group>"; };
+		844B91DF144CBECD00F00A7C /* Agenda 2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Agenda 2-Info.plist"; sourceTree = "<group>"; };
 		844B91E1144CBECD00F00A7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		844B91E3144CBECD00F00A7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		844B91E5144CBECD00F00A7C /* Agenda 2-Prefix.pch */ = {isa = PBXFileReference; path = "Agenda 2-Prefix.pch"; sourceTree = "<group>"; };
-		844B91E6144CBECD00F00A7C /* Agenda_2AppDelegate.h */ = {isa = PBXFileReference; path = Agenda_2AppDelegate.h; sourceTree = "<group>"; };
+		844B91E5144CBECD00F00A7C /* Agenda 2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Agenda 2-Prefix.pch"; sourceTree = "<group>"; };
+		844B91E6144CBECD00F00A7C /* Agenda_2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Agenda_2AppDelegate.h; sourceTree = "<group>"; };
 		844B91E7144CBECD00F00A7C /* Agenda_2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agenda_2AppDelegate.m; sourceTree = "<group>"; };
 		844B91EA144CBECD00F00A7C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		844B91EC144CBECE00F00A7C /* Agenda_2ViewController.h */ = {isa = PBXFileReference; path = Agenda_2ViewController.h; sourceTree = "<group>"; };
-		844B91ED144CBECE00F00A7C /* Agenda_2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agenda_2ViewController.m; sourceTree = "<group>"; };
-		844B91F0144CBECE00F00A7C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Agenda_2ViewController.xib; sourceTree = "<group>"; };
 		844B91F7144CBECE00F00A7C /* Agenda 2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Agenda 2Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B91F8144CBECE00F00A7C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		844B9201144CBECE00F00A7C /* Agenda 2Tests-Info.plist */ = {isa = PBXFileReference; path = "Agenda 2Tests-Info.plist"; sourceTree = "<group>"; };
+		844B9201144CBECE00F00A7C /* Agenda 2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Agenda 2Tests-Info.plist"; sourceTree = "<group>"; };
 		844B9203144CBECE00F00A7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		844B9205144CBECE00F00A7C /* Agenda_2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Agenda_2Tests.h; sourceTree = "<group>"; };
 		844B9207144CBECE00F00A7C /* Agenda_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agenda_2Tests.m; sourceTree = "<group>"; };
+		845EA8691468903B00F93DFF /* Monday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monday.h; sourceTree = "<group>"; };
+		845EA86A1468903B00F93DFF /* Monday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monday.m; sourceTree = "<group>"; };
+		845EA86B1468903B00F93DFF /* Monday.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Monday.xib; sourceTree = "<group>"; };
+		845EA86E1468906200F93DFF /* Tuesday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tuesday.h; sourceTree = "<group>"; };
+		845EA86F1468906200F93DFF /* Tuesday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tuesday.m; sourceTree = "<group>"; };
+		845EA8701468906200F93DFF /* Tuesday.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tuesday.xib; sourceTree = "<group>"; };
+		8468F35D14795A2A002B846E /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		8468F35E14795A2A002B846E /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		848C0D1D14A641DF00B25E10 /* 29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 29x29.png; path = ../29x29.png; sourceTree = "<group>"; };
+		848C0D1E14A641DF00B25E10 /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 57x57.png; path = ../57x57.png; sourceTree = "<group>"; };
+		848C0D1F14A641DF00B25E10 /* 72x75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 72x75.png; path = ../72x75.png; sourceTree = "<group>"; };
+		848C0D2014A641DF00B25E10 /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 114x114.png; path = ../114x114.png; sourceTree = "<group>"; };
+		848C0D2114A641DF00B25E10 /* 512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 512x512.png; path = ../512x512.png; sourceTree = "<group>"; };
+		848C0D2214A641DF00B25E10 /* Default-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-ipad.png"; path = "../Default-ipad.png"; sourceTree = "<group>"; };
+		848C0D2314A641DF00B25E10 /* Default-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-iphone.png"; path = "../Default-iphone.png"; sourceTree = "<group>"; };
+		8493285314E6E32E00861227 /* TeachersDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersDetails.h; sourceTree = "<group>"; };
+		8493285414E6E32E00861227 /* TeachersDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersDetails.m; sourceTree = "<group>"; };
+		8493285514E6E32E00861227 /* TeachersDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeachersDetails.xib; sourceTree = "<group>"; };
+		8493285814E6E4A100861227 /* AddTeacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTeacher.h; sourceTree = "<group>"; };
+		8493285914E6E4A200861227 /* AddTeacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTeacher.m; sourceTree = "<group>"; };
+		8493285A14E6E4A200861227 /* AddTeacher.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddTeacher.xib; sourceTree = "<group>"; };
+		84A5FA7F1490270A004A56C0 /* 19-gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-gear.png"; sourceTree = "<group>"; };
+		84A5FA811490279B004A56C0 /* 83-calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "83-calendar.png"; sourceTree = "<group>"; };
+		84A5FA83149027FB004A56C0 /* 90-life-buoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "90-life-buoy.png"; sourceTree = "<group>"; };
+		84A5FA8614902FFA004A56C0 /* SchedualTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedualTableViewController.h; sourceTree = "<group>"; };
+		84A5FA8714902FFA004A56C0 /* SchedualTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedualTableViewController.m; sourceTree = "<group>"; };
+		84A5FA8814902FFA004A56C0 /* SchedualTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchedualTableViewController.xib; sourceTree = "<group>"; };
+		84ACCB7914884D0300EA305D /* 117-todo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "117-todo.png"; sourceTree = "<group>"; };
+		84ACCB7A14884D0300EA305D /* 123-id-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "123-id-card.png"; sourceTree = "<group>"; };
+		84ACCB7B14884D0300EA305D /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
+		84ACCB7C14884D0300EA305D /* 180-stickynote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180-stickynote.png"; sourceTree = "<group>"; };
+		84ACCB841489947900EA305D /* classListTabIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = classListTabIcon.png; sourceTree = "<group>"; };
+		84B0CA0814D8AE4100FB36B4 /* leftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leftArrow.png; path = ../leftArrow.png; sourceTree = "<group>"; };
+		84B0CA0914D8AE4100FB36B4 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rightArrow.png; path = ../rightArrow.png; sourceTree = "<group>"; };
+		84B3B70A14EB2661001DEAA5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		84B3B70B14EB2661001DEAA5 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		84B3B70C14EB2661001DEAA5 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
+		84BBB7B11470868E005246E8 /* Wednesday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wednesday.h; sourceTree = "<group>"; };
+		84BBB7B21470868E005246E8 /* Wednesday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wednesday.m; sourceTree = "<group>"; };
+		84BBB7B31470868E005246E8 /* Wednesday.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Wednesday.xib; sourceTree = "<group>"; };
+		84BBB7B7147087EF005246E8 /* Thursday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thursday.h; sourceTree = "<group>"; };
+		84BBB7B8147087EF005246E8 /* Thursday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thursday.m; sourceTree = "<group>"; };
+		84BBB7B9147087EF005246E8 /* Thursday.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Thursday.xib; sourceTree = "<group>"; };
+		84BBB7BC14708892005246E8 /* Friday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friday.h; sourceTree = "<group>"; };
+		84BBB7BD14708892005246E8 /* Friday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friday.m; sourceTree = "<group>"; };
+		84BBB7BE14708892005246E8 /* Friday.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Friday.xib; sourceTree = "<group>"; };
+		84BBB7C114708959005246E8 /* Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
+		84BBB7C214708959005246E8 /* Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Other.m; sourceTree = "<group>"; };
+		84BBB7C314708959005246E8 /* Other.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Other.xib; sourceTree = "<group>"; };
+		84BE105D148D819F0082AA5B /* Teachers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teachers.h; sourceTree = "<group>"; };
+		84BE105E148D819F0082AA5B /* Teachers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teachers.m; sourceTree = "<group>"; };
+		84BE105F148D819F0082AA5B /* Teachers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Teachers.xib; sourceTree = "<group>"; };
+		84BE1062148D81A60082AA5B /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
+		84BE1063148D81A60082AA5B /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
+		84BE1064148D81A60082AA5B /* Notes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Notes.xib; sourceTree = "<group>"; };
+		84BE106C148D81B90082AA5B /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
+		84BE106D148D81B90082AA5B /* About.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = About.m; sourceTree = "<group>"; };
+		84BE106E148D81B90082AA5B /* About.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
+		84C439D214561E54005D067E /* Agenda_2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agenda_2ViewController.h; sourceTree = "<group>"; };
+		84C439D314561E54005D067E /* Agenda_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agenda_2ViewController.m; sourceTree = "<group>"; };
+		84C439D414561E54005D067E /* Agenda_2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Agenda_2ViewController.xib; sourceTree = "<group>"; };
+		84C6657E1493E49600A9AA36 /* Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
+		84C6657F1493E49600A9AA36 /* Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help.m; sourceTree = "<group>"; };
+		84C665801493E49600A9AA36 /* Help.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Help.xib; sourceTree = "<group>"; };
+		84D712461492E899001F90F5 /* ScheduleClassDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleClassDetails.h; sourceTree = "<group>"; };
+		84D712471492E899001F90F5 /* ScheduleClassDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleClassDetails.m; sourceTree = "<group>"; };
+		84D712481492E899001F90F5 /* ScheduleClassDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleClassDetails.xib; sourceTree = "<group>"; };
+		84DC169E14D89C920066E859 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		84EBCA2A15163A4C0030F77C /* QuickLinksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickLinksTableViewController.h; sourceTree = "<group>"; };
+		84EBCA2B15163A4C0030F77C /* QuickLinksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickLinksTableViewController.m; sourceTree = "<group>"; };
+		84EBCA2C15163A4C0030F77C /* QuickLinksTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuickLinksTableViewController.xib; sourceTree = "<group>"; };
+		84EBCA2F15163A800030F77C /* QuickLinksDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickLinksDetails.h; sourceTree = "<group>"; };
+		84EBCA3015163A800030F77C /* QuickLinksDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickLinksDetails.m; sourceTree = "<group>"; };
+		84EBCA3115163A800030F77C /* QuickLinksDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuickLinksDetails.xib; sourceTree = "<group>"; };
+		84EFE1A314DB4CB700235E35 /* AddModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddModalView.h; sourceTree = "<group>"; };
+		84EFE1A414DB4CB700235E35 /* AddModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddModalView.m; sourceTree = "<group>"; };
+		84EFE1A514DB4CB700235E35 /* AddModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddModalView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DC169F14D89C920066E859 /* MessageUI.framework in Frameworks */,
 				844B91D8144CBECD00F00A7C /* UIKit.framework in Frameworks */,
 				844B91DA144CBECD00F00A7C /* Foundation.framework in Frameworks */,
 				844B91DC144CBECD00F00A7C /* CoreGraphics.framework in Frameworks */,
@@ -105,6 +243,7 @@
 		844B91D6144CBECD00F00A7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84DC169E14D89C920066E859 /* MessageUI.framework */,
 				844B91D7144CBECD00F00A7C /* UIKit.framework */,
 				844B91D9144CBECD00F00A7C /* Foundation.framework */,
 				844B91DB144CBECD00F00A7C /* CoreGraphics.framework */,
@@ -116,13 +255,15 @@
 		844B91DD144CBECD00F00A7C /* Agenda 2 */ = {
 			isa = PBXGroup;
 			children = (
+				84F25FDB14FD77170059D7B9 /* Images */,
+				84A5FA7E14902595004A56C0 /* Tabs */,
+				84A5FA7D1490250B004A56C0 /* Day Views */,
+				844B91DE144CBECD00F00A7C /* Supporting Files */,
+				8468F35D14795A2A002B846E /* TPKeyboardAvoidingScrollView.h */,
+				8468F35E14795A2A002B846E /* TPKeyboardAvoidingScrollView.m */,
 				844B91E6144CBECD00F00A7C /* Agenda_2AppDelegate.h */,
 				844B91E7144CBECD00F00A7C /* Agenda_2AppDelegate.m */,
 				844B91E9144CBECD00F00A7C /* MainWindow.xib */,
-				844B91EC144CBECE00F00A7C /* Agenda_2ViewController.h */,
-				844B91ED144CBECE00F00A7C /* Agenda_2ViewController.m */,
-				844B91EF144CBECE00F00A7C /* Agenda_2ViewController.xib */,
-				844B91DE144CBECD00F00A7C /* Supporting Files */,
 			);
 			path = "Agenda 2";
 			sourceTree = "<group>";
@@ -157,6 +298,121 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84A5FA7D1490250B004A56C0 /* Day Views */ = {
+			isa = PBXGroup;
+			children = (
+				845EA8691468903B00F93DFF /* Monday.h */,
+				845EA86A1468903B00F93DFF /* Monday.m */,
+				845EA86B1468903B00F93DFF /* Monday.xib */,
+				845EA86E1468906200F93DFF /* Tuesday.h */,
+				845EA86F1468906200F93DFF /* Tuesday.m */,
+				845EA8701468906200F93DFF /* Tuesday.xib */,
+				84BBB7B11470868E005246E8 /* Wednesday.h */,
+				84BBB7B21470868E005246E8 /* Wednesday.m */,
+				84BBB7B31470868E005246E8 /* Wednesday.xib */,
+				84BBB7B7147087EF005246E8 /* Thursday.h */,
+				84BBB7B8147087EF005246E8 /* Thursday.m */,
+				84BBB7B9147087EF005246E8 /* Thursday.xib */,
+				84BBB7BC14708892005246E8 /* Friday.h */,
+				84BBB7BD14708892005246E8 /* Friday.m */,
+				84BBB7BE14708892005246E8 /* Friday.xib */,
+				84BBB7C114708959005246E8 /* Other.h */,
+				84BBB7C214708959005246E8 /* Other.m */,
+				84BBB7C314708959005246E8 /* Other.xib */,
+			);
+			name = "Day Views";
+			sourceTree = "<group>";
+		};
+		84A5FA7E14902595004A56C0 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				84A5FA8514902F8B004A56C0 /* TableViewControllers */,
+				84C439D214561E54005D067E /* Agenda_2ViewController.h */,
+				84C439D314561E54005D067E /* Agenda_2ViewController.m */,
+				84C439D414561E54005D067E /* Agenda_2ViewController.xib */,
+				84BE1062148D81A60082AA5B /* Notes.h */,
+				84BE1063148D81A60082AA5B /* Notes.m */,
+				84BE1064148D81A60082AA5B /* Notes.xib */,
+				84BE106C148D81B90082AA5B /* About.h */,
+				84BE106D148D81B90082AA5B /* About.m */,
+				84BE106E148D81B90082AA5B /* About.xib */,
+				84C6657E1493E49600A9AA36 /* Help.h */,
+				84C6657F1493E49600A9AA36 /* Help.m */,
+				84C665801493E49600A9AA36 /* Help.xib */,
+				84B3B70A14EB2661001DEAA5 /* Settings.h */,
+				84B3B70B14EB2661001DEAA5 /* Settings.m */,
+				84B3B70C14EB2661001DEAA5 /* Settings.xib */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		84A5FA8514902F8B004A56C0 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84EBCA2B15163A4C0030F77C /* QuickLinksTableViewController.m */,
+				84BE105D148D819F0082AA5B /* Teachers.h */,
+				84BE105E148D819F0082AA5B /* Teachers.m */,
+				84BE105F148D819F0082AA5B /* Teachers.xib */,
+				84EBCA2A15163A4C0030F77C /* QuickLinksTableViewController.h */,
+				84EBCA2C15163A4C0030F77C /* QuickLinksTableViewController.xib */,
+				84D7123A1492E7F2001F90F5 /* TableViewCell Details */,
+				84A5FA8614902FFA004A56C0 /* SchedualTableViewController.h */,
+				84A5FA8714902FFA004A56C0 /* SchedualTableViewController.m */,
+				84A5FA8814902FFA004A56C0 /* SchedualTableViewController.xib */,
+				84EFE1A314DB4CB700235E35 /* AddModalView.h */,
+				84EFE1A414DB4CB700235E35 /* AddModalView.m */,
+				84EFE1A514DB4CB700235E35 /* AddModalView.xib */,
+				8493285814E6E4A100861227 /* AddTeacher.h */,
+				8493285914E6E4A200861227 /* AddTeacher.m */,
+				8493285A14E6E4A200861227 /* AddTeacher.xib */,
+			);
+			name = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		84D7123A1492E7F2001F90F5 /* TableViewCell Details */ = {
+			isa = PBXGroup;
+			children = (
+				84D712461492E899001F90F5 /* ScheduleClassDetails.h */,
+				84D712471492E899001F90F5 /* ScheduleClassDetails.m */,
+				84D712481492E899001F90F5 /* ScheduleClassDetails.xib */,
+				8493285314E6E32E00861227 /* TeachersDetails.h */,
+				8493285414E6E32E00861227 /* TeachersDetails.m */,
+				8493285514E6E32E00861227 /* TeachersDetails.xib */,
+				84EBCA2F15163A800030F77C /* QuickLinksDetails.h */,
+				84EBCA3015163A800030F77C /* QuickLinksDetails.m */,
+				84EBCA3115163A800030F77C /* QuickLinksDetails.xib */,
+			);
+			name = "TableViewCell Details";
+			sourceTree = "<group>";
+		};
+		84F25FDB14FD77170059D7B9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				842D9906151D266E007A3DCD /* about-icon.png */,
+				842D9901151D1DC8007A3DCD /* 108-badge.png */,
+				84A5FA811490279B004A56C0 /* 83-calendar.png */,
+				84A5FA83149027FB004A56C0 /* 90-life-buoy.png */,
+				84B0CA0814D8AE4100FB36B4 /* leftArrow.png */,
+				84B0CA0914D8AE4100FB36B4 /* rightArrow.png */,
+				848C0D1D14A641DF00B25E10 /* 29x29.png */,
+				848C0D1E14A641DF00B25E10 /* 57x57.png */,
+				848C0D1F14A641DF00B25E10 /* 72x75.png */,
+				848C0D2014A641DF00B25E10 /* 114x114.png */,
+				848C0D2114A641DF00B25E10 /* 512x512.png */,
+				848C0D2214A641DF00B25E10 /* Default-ipad.png */,
+				848C0D2314A641DF00B25E10 /* Default-iphone.png */,
+				84239F9814F6D3CC0098A8B4 /* checkbox.png */,
+				84ACCB7914884D0300EA305D /* 117-todo.png */,
+				84A5FA7F1490270A004A56C0 /* 19-gear.png */,
+				84ACCB841489947900EA305D /* classListTabIcon.png */,
+				84ACCB7A14884D0300EA305D /* 123-id-card.png */,
+				84ACCB7B14884D0300EA305D /* 179-notepad.png */,
+				84ACCB7C14884D0300EA305D /* 180-stickynote.png */,
+				844185631518023D001FA120 /* Default-iphone@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +423,7 @@
 				844B91CF144CBECD00F00A7C /* Sources */,
 				844B91D0144CBECD00F00A7C /* Frameworks */,
 				844B91D1144CBECD00F00A7C /* Resources */,
+				8463540914DA0952009EA8DD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -201,6 +458,9 @@
 /* Begin PBXProject section */
 		844B91CA144CBECD00F00A7C /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 844B91CD144CBECD00F00A7C /* Build configuration list for PBXProject "Agenda 2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -226,7 +486,46 @@
 			files = (
 				844B91E2144CBECD00F00A7C /* InfoPlist.strings in Resources */,
 				844B91EB144CBECD00F00A7C /* MainWindow.xib in Resources */,
-				844B91F1144CBECE00F00A7C /* Agenda_2ViewController.xib in Resources */,
+				84C439D614561E54005D067E /* Agenda_2ViewController.xib in Resources */,
+				845EA86D1468903B00F93DFF /* Monday.xib in Resources */,
+				845EA8721468906200F93DFF /* Tuesday.xib in Resources */,
+				84BBB7B51470868E005246E8 /* Wednesday.xib in Resources */,
+				84BBB7BB147087EF005246E8 /* Thursday.xib in Resources */,
+				84BBB7C014708892005246E8 /* Friday.xib in Resources */,
+				84BBB7C514708959005246E8 /* Other.xib in Resources */,
+				84ACCB7D14884D0300EA305D /* 117-todo.png in Resources */,
+				84ACCB7E14884D0300EA305D /* 123-id-card.png in Resources */,
+				84ACCB7F14884D0300EA305D /* 179-notepad.png in Resources */,
+				84ACCB8014884D0300EA305D /* 180-stickynote.png in Resources */,
+				84ACCB851489947900EA305D /* classListTabIcon.png in Resources */,
+				84BE1061148D819F0082AA5B /* Teachers.xib in Resources */,
+				84BE1066148D81A60082AA5B /* Notes.xib in Resources */,
+				84BE1070148D81B90082AA5B /* About.xib in Resources */,
+				84A5FA801490270A004A56C0 /* 19-gear.png in Resources */,
+				84A5FA821490279B004A56C0 /* 83-calendar.png in Resources */,
+				84A5FA84149027FB004A56C0 /* 90-life-buoy.png in Resources */,
+				84A5FA8A14902FFA004A56C0 /* SchedualTableViewController.xib in Resources */,
+				84D7124A1492E899001F90F5 /* ScheduleClassDetails.xib in Resources */,
+				84C665821493E49600A9AA36 /* Help.xib in Resources */,
+				848C0D2514A641DF00B25E10 /* 29x29.png in Resources */,
+				848C0D2614A641DF00B25E10 /* 57x57.png in Resources */,
+				848C0D2714A641DF00B25E10 /* 72x75.png in Resources */,
+				848C0D2814A641DF00B25E10 /* 114x114.png in Resources */,
+				848C0D2914A641DF00B25E10 /* 512x512.png in Resources */,
+				848C0D2A14A641DF00B25E10 /* Default-ipad.png in Resources */,
+				848C0D2B14A641DF00B25E10 /* Default-iphone.png in Resources */,
+				84B0CA0A14D8AE4100FB36B4 /* leftArrow.png in Resources */,
+				84B0CA0B14D8AE4100FB36B4 /* rightArrow.png in Resources */,
+				84EFE1A714DB4CB700235E35 /* AddModalView.xib in Resources */,
+				8493285714E6E32E00861227 /* TeachersDetails.xib in Resources */,
+				8493285C14E6E4A200861227 /* AddTeacher.xib in Resources */,
+				84B3B70E14EB2661001DEAA5 /* Settings.xib in Resources */,
+				84239F9914F6D3CC0098A8B4 /* checkbox.png in Resources */,
+				84EBCA2E15163A4C0030F77C /* QuickLinksTableViewController.xib in Resources */,
+				84EBCA3315163A800030F77C /* QuickLinksDetails.xib in Resources */,
+				844185641518023D001FA120 /* Default-iphone@2x.png in Resources */,
+				842D9902151D1DC8007A3DCD /* 108-badge.png in Resources */,
+				842D9907151D266E007A3DCD /* about-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +554,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		8463540914DA0952009EA8DD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# http://www.alexwhittemore.com/developing-jailbroken-iphone-ios-401/\n\n# THE LINE BELOW HAS TO BE EDITED BY THE INSTALLING SCRIPT\nXCODE_ROOT=\"/Developer\"\n\nexport CODESIGN_ALLOCATE=\"$XCODE_ROOT/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\"\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n\"$XCODE_ROOT\"/iphoneentitlements401/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"Jailbroken Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -264,7 +576,26 @@
 			files = (
 				844B91E4144CBECD00F00A7C /* main.m in Sources */,
 				844B91E8144CBECD00F00A7C /* Agenda_2AppDelegate.m in Sources */,
-				844B91EE144CBECE00F00A7C /* Agenda_2ViewController.m in Sources */,
+				84C439D514561E54005D067E /* Agenda_2ViewController.m in Sources */,
+				845EA86C1468903B00F93DFF /* Monday.m in Sources */,
+				845EA8711468906200F93DFF /* Tuesday.m in Sources */,
+				84BBB7B41470868E005246E8 /* Wednesday.m in Sources */,
+				84BBB7BA147087EF005246E8 /* Thursday.m in Sources */,
+				84BBB7BF14708892005246E8 /* Friday.m in Sources */,
+				84BBB7C414708959005246E8 /* Other.m in Sources */,
+				8468F35F14795A2A002B846E /* TPKeyboardAvoidingScrollView.m in Sources */,
+				84BE1060148D819F0082AA5B /* Teachers.m in Sources */,
+				84BE1065148D81A60082AA5B /* Notes.m in Sources */,
+				84BE106F148D81B90082AA5B /* About.m in Sources */,
+				84A5FA8914902FFA004A56C0 /* SchedualTableViewController.m in Sources */,
+				84D712491492E899001F90F5 /* ScheduleClassDetails.m in Sources */,
+				84C665811493E49600A9AA36 /* Help.m in Sources */,
+				84EFE1A614DB4CB700235E35 /* AddModalView.m in Sources */,
+				8493285614E6E32E00861227 /* TeachersDetails.m in Sources */,
+				8493285B14E6E4A200861227 /* AddTeacher.m in Sources */,
+				84B3B70D14EB2661001DEAA5 /* Settings.m in Sources */,
+				84EBCA2D15163A4C0030F77C /* QuickLinksTableViewController.m in Sources */,
+				84EBCA3215163A800030F77C /* QuickLinksDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +632,6 @@
 				844B91EA144CBECD00F00A7C /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		844B91EF144CBECE00F00A7C /* Agenda_2ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				844B91F0144CBECE00F00A7C /* en */,
-			);
-			name = Agenda_2ViewController.xib;
 			sourceTree = "<group>";
 		};
 		844B9202144CBECE00F00A7C /* InfoPlist.strings */ = {
@@ -349,6 +672,7 @@
 		844B920A144CBECE00F00A7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -368,10 +692,14 @@
 		844B920C144CBECE00F00A7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Agenda 2/Agenda 2-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Agenda 2/Agenda 2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,10 +707,14 @@
 		844B920D144CBECE00F00A7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Agenda 2/Agenda 2-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Agenda 2/Agenda 2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -397,6 +729,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Agenda 2/Agenda 2-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Agenda 2Tests/Agenda 2Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -414,6 +747,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Agenda 2/Agenda 2-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Agenda 2Tests/Agenda 2Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -440,6 +774,7 @@
 				844B920D144CBECE00F00A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		844B920E144CBECE00F00A7C /* Build configuration list for PBXNativeTarget "Agenda 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +783,7 @@
 				844B9210144CBECE00F00A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

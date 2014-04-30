@@ -130,117 +130,39 @@
     NSLog(@"SAVE ALL DATA");
     @try {
     
-    /*NSMutableArray *monArray = [[NSMutableArray alloc]init];
-    NSMutableArray *tuesArray = [[NSMutableArray alloc]init];
-    NSMutableArray *wedArray = [[NSMutableArray alloc]init];
-    NSMutableArray *thursArray = [[NSMutableArray alloc]init];
-    NSMutableArray *friArray = [[NSMutableArray alloc]init];
-    NSMutableArray *otherArray = [[NSMutableArray alloc]init];*/
-    
-    NSMutableDictionary *monDict = [[NSMutableDictionary alloc]init];
-    NSMutableDictionary *tuesDict = [[NSMutableDictionary alloc]init];
-    NSMutableDictionary *wedDict = [[NSMutableDictionary alloc]init];
-    NSMutableDictionary *thursDict = [[NSMutableDictionary alloc]init];
-    NSMutableDictionary *friDict = [[NSMutableDictionary alloc]init];
-    NSMutableDictionary *otherDict = [[NSMutableDictionary alloc]init];    
-        
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *filePath = [NSString stringWithFormat:@"%@/%i-%@.plist", [paths objectAtIndex:0], week, [self getDates:3]];
-    NSString *tablePath = [NSString stringWithFormat:@"%@/classTable.plist",[paths objectAtIndex:0]];
-    NSArray *classes = [NSArray arrayWithContentsOfFile:tablePath];
-    //NSString *prefsPath = [NSString stringWithFormat:@"%@/prefs.plist", [paths objectAtIndex:0]];
-    
-    NSLog(@"Loop start");
-        
-        for (int x=0; x<[classes count]; x++) {
-            [monDict setObject:[[monObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-            [tuesDict setObject:[[tuesObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-            [wedDict setObject:[[wedObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-            [thursDict setObject:[[thursObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-            [friDict setObject:[[friObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-            [otherDict setObject:[[otherObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-        }
-    /*    
-    for(int x = 0; x <= [monObj.textViewObjects count]-1; x++){
-        //NSLog(@"Monday");
-        //NSLog(@"=======================================================");
-        //NSLog(@"x == %i\nSetting up tmp variable",x);
-        
-		UITextView *tmp = [monObj.textViewObjects objectAtIndex:x];
-        [monArray addObject:tmp.text];
-        
-        //NSLog(@"=======================================================");
-	}
-
-    for(int x = 0; x <= [tuesObj.textViewObjects count]-1; x++){
-        //NSLog(@"Tuesday");
-        //NSLog(@"=======================================================");
+		NSMutableDictionary *monDict = [[NSMutableDictionary alloc]init];
+		NSMutableDictionary *tuesDict = [[NSMutableDictionary alloc]init];
+		NSMutableDictionary *wedDict = [[NSMutableDictionary alloc]init];
+		NSMutableDictionary *thursDict = [[NSMutableDictionary alloc]init];
+		NSMutableDictionary *friDict = [[NSMutableDictionary alloc]init];
+		NSMutableDictionary *otherDict = [[NSMutableDictionary alloc]init];    
+			
+		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+		NSString *filePath = [NSString stringWithFormat:@"%@/%i-%@.plist", [paths objectAtIndex:0], week, [self getDates:3]];
+		NSString *tablePath = [NSString stringWithFormat:@"%@/classTable.plist",[paths objectAtIndex:0]];
+		NSArray *classes = [NSArray arrayWithContentsOfFile:tablePath];
+		//NSString *prefsPath = [NSString stringWithFormat:@"%@/prefs.plist", [paths objectAtIndex:0]];
 		
-        //NSLog(@"x == %i\nSetting up tmp variable",x);
-        UITextView *tmp = [tuesObj.textViewObjects objectAtIndex:x];
-        [tuesArray addObject:tmp.text];
-        //NSLog(@"=======================================================");
-	}
-    
-    for(int x = 0; x <= [wedObj.textViewObjects count]-1; x++){
-        //NSLog(@"Wednesday");        
-        //NSLog(@"=======================================================");
+		NSLog(@"Loop start");
+			
+		for (int x=0; x<[classes count]; x++) {
+			[monDict setObject:[[monObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
+			[tuesDict setObject:[[tuesObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
+			[wedDict setObject:[[wedObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
+			[thursDict setObject:[[thursObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
+			[friDict setObject:[[friObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
+			[otherDict setObject:[[otherObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
+		}
 		
-        //NSLog(@"x == %i\nSetting up tmp variable",x);
-        UITextView *tmp = [wedObj.textViewObjects objectAtIndex:x];
-        [wedArray addObject:tmp.text];
-        //NSLog(@"=======================================================");
-	}
-    
-    for(int x = 0; x <= [thursObj.textViewObjects count]-1; x++){
-        //NSLog(@"Thursday");
-        //NSLog(@"=======================================================");
+		NSMutableArray *dataArray = [[NSMutableArray alloc] initWithObjects:monDict,tuesDict,wedDict,thursDict,friDict,otherDict, nil];
+		NSLog(@"SAVE dataArray: %@",dataArray);
 		
-        //NSLog(@"x == %i\nSetting up tmp variable",x);
-        UITextView *tmp = [thursObj.textViewObjects objectAtIndex:x];
-        [thursArray addObject:tmp.text];
-
-        //NSLog(@"=======================================================");
-	}
-    
-    for(int x = 0; x <= [friObj.textViewObjects count]-1; x++){
-        //NSLog(@"Friday");        
-        //NSLog(@"=======================================================");
+		NSLog(@"%@",filePath);
+		NSLog(@"dataArray writeToFile");
+		[dataArray writeToFile:filePath atomically:YES];
+		NSLog(@"Saving data successful!");
 		
-        //NSLog(@"x == %i\nSetting up tmp variable",x);
-        UITextView *tmp = [friObj.textViewObjects objectAtIndex:x];
-        [friArray addObject:tmp.text];
-
-        //NSLog(@"=======================================================");
-	}
-    
-    for(int x = 0; x <= [otherObj.textViewObjects count]-1; x++){
-        //NSLog(@"Other");
-        //NSLog(@"=======================================================");
-        
-        //NSLog(@"x == %i\nSetting up tmp variable",x);
-        UITextView *tmp = [otherObj.textViewObjects objectAtIndex:x];
-        [otherArray addObject:tmp.text];
-
-        NSLog(@"=======================================================");
-	}*/
-    
-    //NSMutableArray *dataArray = [[NSMutableArray alloc] initWithObjects:monArray,tuesArray,wedArray, thursArray, friArray, otherArray, nil];
-    NSMutableArray *dataArray = [[NSMutableArray alloc] initWithObjects:monDict,tuesDict,wedDict,thursDict,friDict,otherDict, nil];
-    NSLog(@"SAVE dataArray: %@",dataArray);
-    
-    NSLog(@"%@",filePath);
-    NSLog(@"dataArray writeToFile");
-    [dataArray writeToFile:filePath atomically:YES];
-    NSLog(@"Saving data successful!");
-    
-    [dataArray release];
-    /*[monArray release];
-    [tuesArray release];
-    [wedArray release];
-    [thursArray release];
-    [friArray release];
-    [otherArray release];*/
+		[dataArray release];
     }
     @catch (NSException *exception) {
         NSLog(@"******** ERROR *********");
@@ -288,98 +210,7 @@
         tmp = [otherObj.textViewObjects objectAtIndex:x];
         tmp.text = [[dataArray objectAtIndex:5] valueForKey:[classes objectAtIndex:x]];
     }    
-        
-/*        
-        //Monday
-        for(int x = 0; x <= [monObj.textViewObjects count]-1; x++){
-            UITextView *tmp = [monObj.textViewObjects objectAtIndex:x];
-            
-            [tmp setFont:[UIFont fontWithName:@"ArialMT" size:17.0]];
-            //NSLog(@"Setting text of tmp var");
-            //tmp.text = [[dataArray objectAtIndex:0] objectAtIndex:x];
-            //NSLog(@"Text set. Releasing..");
-            //[tmp release];
-        }
-        
-        //Tuesday
-        for(int x = 0; x <= [tuesObj.textViewObjects count]-1; x++){
-            UITextView *tmp = [tuesObj.textViewObjects objectAtIndex:x];
-            [tmp setFont:[UIFont fontWithName:@"ArialMT" size:17.0]];
-            NSLog(@"Setting text of tmp var");
-            tmp.text = [[dataArray objectAtIndex:1] objectAtIndex:x];
-            NSLog(@"Text set. Releasing..");
-            //[tmp release];
-        }
-        
-        //Wednesday
-        for(int x = 0; x <= [wedObj.textViewObjects count]-1; x++){
-            UITextView *tmp = [wedObj.textViewObjects objectAtIndex:x];
-            [tmp setFont:[UIFont fontWithName:@"ArialMT" size:17.0]];
-            tmp.text = [[dataArray objectAtIndex:2] objectAtIndex:x];
-            //[tmp release];
-        }
-        
-        //Thursday
-        for(int x = 0; x <= [thursObj.textViewObjects count]-1; x++){
-            UITextView *tmp = [thursObj.textViewObjects objectAtIndex:x];
-            [tmp setFont:[UIFont fontWithName:@"ArialMT" size:17.0]];
-            tmp.text = [[dataArray objectAtIndex:3] objectAtIndex:x];
-            //[tmp release];
-        }
-        
-        //Friday
-        for(int x = 0; x <= [friObj.textViewObjects count]-1; x++){
-            UITextView *tmp = [friObj.textViewObjects objectAtIndex:x];
-            [tmp setFont:[UIFont fontWithName:@"ArialMT" size:17.0]];
-            tmp.text = [[dataArray objectAtIndex:4] objectAtIndex:x];
-            //[tmp release];
-        }
-        
-        //Other
-        for(int x = 0; x <= [otherObj.textViewObjects count]-1; x++){
-            UITextView *tmp = [otherObj.textViewObjects objectAtIndex:x];
-            [tmp setFont:[UIFont fontWithName:@"ArialMT" size:17.0]];
-            tmp.text = [[dataArray objectAtIndex:5] objectAtIndex:x];
-            //[tmp release];
-        }*/
     
-    /*tuesObj.scienceBox.text = [[dataArray objectAtIndex:1] objectAtIndex:1];
-    tuesObj.socialBox.text = [[dataArray objectAtIndex:1] objectAtIndex:2];
-    tuesObj.englishBox.text = [[dataArray objectAtIndex:1] objectAtIndex:3];
-    tuesObj.languageBox.text = [[dataArray objectAtIndex:1] objectAtIndex:4];
-    tuesObj.otherBox.text = [[dataArray objectAtIndex:1] objectAtIndex:5];    
-    
-    wedObj.scienceBox.text = [[dataArray objectAtIndex:2] objectAtIndex:1];
-    wedObj.socialBox.text = [[dataArray objectAtIndex:2] objectAtIndex:2];
-    wedObj.englishBox.text = [[dataArray objectAtIndex:2] objectAtIndex:3];
-    wedObj.languageBox.text = [[dataArray objectAtIndex:2] objectAtIndex:4];
-    wedObj.otherBox.text = [[dataArray objectAtIndex:2] objectAtIndex:5];    
-    
-    thursObj.scienceBox.text = [[dataArray objectAtIndex:3] objectAtIndex:1];
-    thursObj.socialBox.text = [[dataArray objectAtIndex:3] objectAtIndex:2];
-    thursObj.englishBox.text = [[dataArray objectAtIndex:3] objectAtIndex:3];
-    thursObj.languageBox.text = [[dataArray objectAtIndex:3] objectAtIndex:4];
-    thursObj.otherBox.text = [[dataArray objectAtIndex:3] objectAtIndex:5];    
-    
-    friObj.scienceBox.text = [[dataArray objectAtIndex:4] objectAtIndex:1];
-    friObj.socialBox.text = [[dataArray objectAtIndex:4] objectAtIndex:2];
-    friObj.englishBox.text = [[dataArray objectAtIndex:4] objectAtIndex:3];
-    friObj.languageBox.text = [[dataArray objectAtIndex:4] objectAtIndex:4];
-    friObj.otherBox.text = [[dataArray objectAtIndex:4] objectAtIndex:5];    
-    
-    otherObj.scienceBox.text = [[dataArray objectAtIndex:5] objectAtIndex:1];
-    otherObj.socialBox.text = [[dataArray objectAtIndex:5] objectAtIndex:2];
-    otherObj.englishBox.text = [[dataArray objectAtIndex:5] objectAtIndex:3];
-    otherObj.languageBox.text = [[dataArray objectAtIndex:5] objectAtIndex:4];
-    otherObj.otherBox.text = [[dataArray objectAtIndex:5] objectAtIndex:5];    
-    
-    monObj.mathBox.text = [[dataArray objectAtIndex:0] objectAtIndex:0];
-    tuesObj.mathBox.text = [[dataArray objectAtIndex:1] objectAtIndex:0];
-    wedObj.mathBox.text = [[dataArray objectAtIndex:2] objectAtIndex:0];
-    thursObj.mathBox.text = [[dataArray objectAtIndex:3] objectAtIndex:0];
-    friObj.mathBox.text = [[dataArray objectAtIndex:4] objectAtIndex:0];
-    otherObj.mathBox.text = [[dataArray objectAtIndex:5] objectAtIndex:0];*/
-
     [dataArray release];
     }
     @catch (NSException *exception) {
@@ -488,7 +319,7 @@
         tmp = -1.0; //An error occured somewhere
     }
     
-    if (tmp || tmp != -1.0) {
+    if (tmp && tmp != -1.0) {
         CGPoint scrollToDate = CGPointMake(scrollView.bounds.size.width*(tmp), 0);
         [scrollView setContentOffset:scrollToDate animated:YES];
     }
