@@ -9,6 +9,35 @@
 #import "AddTeacher.h"
 
 @implementation AddTeacher
+@synthesize oTeacherName,oTeacherRoom,oTeacherEmail,oTeacherPhone,oTeacherWeb,teacherNameString,teacherRoomString,teacherEmailString,teacherPhoneString,teacherWebString,delegate;
+
+-(IBAction)donePressed:(id)sender{
+    [self dismissModalViewControllerAnimated:YES];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"TeacherDonePressed" object:self];
+}
+
+-(IBAction)cancelPressed:(id)sender{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    oTeacherName.text = @"";
+    oTeacherRoom.text = @"";
+    oTeacherEmail.text = @"";
+    oTeacherPhone.text = @"";
+    oTeacherWeb.text = @"";
+    
+    teacherNameString = @"";
+    teacherRoomString = @"";
+    teacherEmailString = @"";
+    teacherPhoneString = @"";
+    teacherWebString = @"";
+}
+
+- (void) viewWillDisappear:(BOOL) animated
+{
+    [[self delegate] setTeacherName:oTeacherName.text withRoom:oTeacherRoom.text withEmail:oTeacherEmail.text withPhone:oTeacherPhone.text andWeb:oTeacherWeb.text];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

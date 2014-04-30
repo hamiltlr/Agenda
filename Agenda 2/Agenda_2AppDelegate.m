@@ -7,20 +7,23 @@
 //
 
 #import "Agenda_2AppDelegate.h"
-
-#import "Agenda_2ViewController.h"
+//#import "Schedual.h"
 
 @implementation Agenda_2AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
+//@synthesize viewController = _viewController;
+@synthesize tabBarController = _tabBarController;
+//@synthesize schedual;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-     
-    self.window.rootViewController = self.viewController;
+    
+    _tabBarController.customizableViewControllers = nil;
+    self.window.rootViewController = self.tabBarController; //self.viewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -66,8 +69,23 @@
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+    [_tabBarController release];
+    //[schedual release];
     [super dealloc];
 }
+
+/*
+ // Optional UITabBarControllerDelegate method.
+ - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+ {
+ }
+ */
+
+/*
+ // Optional UITabBarControllerDelegate method.
+ - (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+ {
+ }
+ */
 
 @end

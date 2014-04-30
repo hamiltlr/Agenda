@@ -10,6 +10,18 @@
 
 @implementation Help
 
+-(IBAction)bugReport:(id)sender{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:?to=leestechwebsite@gmail.com&sbject=AgendaBugReport"]];
+}
+
+-(IBAction)emailMe:(id)sender{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:?to=leestechwebsite@gmail.com&sbject=Agenda%20App%20Support"]];
+}
+
+-(IBAction)visitWebsite:(id)sender{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://lhamil64.wordpress.com"]];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

@@ -1,52 +1,52 @@
 //
-//  Monday.m
+//  Thursday.m
 //  Agenda 2
 //
 //  Created by Lee Hamilton on 11/7/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "Monday.h"
+#import "Thursday.h"
 
-@class Agenda_2ViewController;
-
-@implementation Monday
+@implementation Thursday
 
 @synthesize subScrollView, math,science,social,english,language,other;
 @synthesize mathBox,scienceBox,socialBox,englishBox,languageBox,otherBox;
 @synthesize inputAccView;
 @synthesize textViewObjects,labelObjects;
 
-
 -(void)createInputAccessoryView{
-    inputAccView = [[UIView alloc]initWithFrame:CGRectMake(10.0, 0.0, [[UIScreen mainScreen] bounds].size.width, 40.0)]; //was 310
+    inputAccView = [[UIView alloc]initWithFrame:CGRectMake(10.0, 0.0, 310.0, 40.0)];
     UIToolbar *toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0.0, 0.0, 320.0, 40.0)];
     UIBarButtonItem *doneBttn = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(endEdit:)];
-    //UIBarButtonItem *flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    //UIBarButtonItem *checkBttn = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"checkbox.png"] style:UIBarButtonItemStylePlain target:self action:@selector(markOffItem:)];
-    //[toolbar setItems:[NSArray arrayWithObjects:doneBttn,flexible,checkBttn, nil]];
     [toolbar setItems:[NSArray arrayWithObject:doneBttn]];
     [inputAccView addSubview:toolbar];
     [toolbar release];
-    [doneBttn release];
+    [doneBttn release];    
 }
- 
+
 -(BOOL)textViewShouldBeginEditing:(UITextView *)textView{
-    currentTextView = textView;
     [textView setInputAccessoryView:inputAccView];
     return YES;
 }
 
 -(IBAction)endEdit:(id)sender{
-    [currentTextView resignFirstResponder];
+    [mathBox resignFirstResponder];
+    [scienceBox resignFirstResponder];
+    [socialBox resignFirstResponder];
+    [englishBox resignFirstResponder];
+    [languageBox resignFirstResponder];
+    [otherBox resignFirstResponder];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        // Custom initialization
         textViewObjects = [[NSMutableArray alloc]init];
         labelObjects = [[NSMutableArray alloc]init];
+
     }
     return self;
 }
@@ -66,6 +66,10 @@
     [super viewDidLoad];
     //[self createInputAccessoryView];
     
+    
+    textViewObjects = [[NSMutableArray alloc]init];
+    labelObjects = [[NSMutableArray alloc]init];
+    
     textViewObjects = [[NSMutableArray alloc]init];
     labelObjects = [[NSMutableArray alloc]init];
     
@@ -74,51 +78,42 @@
     NSArray *classes = [NSArray arrayWithContentsOfFile:tablePath];
     
     NSLog(@"%@",classes);
-
-        for (int x = 0; x<[classes count];x++){
-            NSLog(@"||||||||||||||||||||||||||||||||||||||||||| %i",x);
-            
-            UITextView *tmpTView = [[UITextView alloc]initWithFrame:CGRectMake(25, (20 + (110*x) + (43*x)), 280, 110)];
-            [tmpTView setFont:[UIFont fontWithName:@"System" size:17.0]];
-            
-            UILabel *tmpLbl = [[UILabel alloc]init];
-            tmpLbl.text = [classes objectAtIndex:x];
-            tmpLbl.backgroundColor = [UIColor clearColor];
-//          tmpLbl.textColor = [UIColor colorWithRed:15.0 green:0.0 blue:133.0 alpha:100];
-            [tmpLbl setTextAlignment:UITextAlignmentRight];
-            tmpLbl.transform = CGAffineTransformMakeRotation(-3.14159265/2);
-            tmpLbl.frame = CGRectMake(1, (20 + (110*x) + (43*x)), 21, 110);
-            
-            //NSLog(@"tmpTView == %@",tmpTView);
-            [textViewObjects addObject:tmpTView];
-            //NSLog(@"[textViewObjects objectAtIndex:%i] == %@",x,[textViewObjects objectAtIndex:x]);
-            
-            //NSLog(@"tmpLbl == %@",tmpLbl);
-            [labelObjects addObject:tmpLbl];
-            NSLog(@"[labelObjects objectAtIndex:%i] == %@",x,[labelObjects objectAtIndex:x]);
-            [tmpTView release];
-            [tmpLbl release];
-            [self.subScrollView addSubview:[textViewObjects objectAtIndex:x]];
-            [self.subScrollView addSubview:[labelObjects objectAtIndex:x]];
-                        
-            //UITextView *tmp = [textViewObjects objectAtIndex:0];
-            //tmp.text = @"test";
-            //NSLog(@"[textViewObjects objectAtIndex:0] == %@",[[textViewObjects objectAtIndex:0] text]);
+    
+    for (int x = 0; x<[classes count];x++){
+        NSLog(@"||||||||||||||||||||||||||||||||||||||||||| %i",x);
+        
+        UITextView *tmpTView = [[UITextView alloc]initWithFrame:CGRectMake(25, (20 + (110*x) + (43*x)), 280, 110)];
+        [tmpTView setFont:[UIFont fontWithName:@"System" size:17.0]];
+        
+        UILabel *tmpLbl = [[UILabel alloc]init];
+        tmpLbl.text = [classes objectAtIndex:x];
+        tmpLbl.backgroundColor = [UIColor clearColor];
+        //          tmpLbl.textColor = [UIColor colorWithRed:15.0 green:0.0 blue:133.0 alpha:100];
+        [tmpLbl setTextAlignment:UITextAlignmentRight];
+        tmpLbl.transform = CGAffineTransformMakeRotation(-3.14159265/2);
+        tmpLbl.frame = CGRectMake(1, (20 + (110*x) + (43*x)), 21, 110);
+        
+        //NSLog(@"tmpTView == %@",tmpTView);
+        [textViewObjects addObject:tmpTView];
+        //NSLog(@"[textViewObjects objectAtIndex:%i] == %@",x,[textViewObjects objectAtIndex:x]);
+        
+        //NSLog(@"tmpLbl == %@",tmpLbl);
+        [labelObjects addObject:tmpLbl];
+        NSLog(@"[labelObjects objectAtIndex:%i] == %@",x,[labelObjects objectAtIndex:x]);
+        [tmpTView release];
+        [tmpLbl release];
+        [self.subScrollView addSubview:[textViewObjects objectAtIndex:x]];
+        [self.subScrollView addSubview:[labelObjects objectAtIndex:x]];
+        
+        //UITextView *tmp = [textViewObjects objectAtIndex:0];
+        //tmp.text = @"test";
+        //NSLog(@"[textViewObjects objectAtIndex:0] == %@",[[textViewObjects objectAtIndex:0] text]);
     }
     
     NSLog(@"%i",(153*[textViewObjects count]));
     
     
-    [self.subScrollView setContentSize:CGSizeMake(320, (153*[textViewObjects count]))];
-    
-    /*@catch (NSException *e) {
-        NSLog(@"*******************");
-        NSLog(@"*** ERROR: %@", e);
-        NSLog(@"*******************");
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"ERROR" message:@"An error occured while loading. Please try again." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
-        [alert show];
-        [alert release];
-    }*/
+    [self.subScrollView setContentSize:CGSizeMake(320, (153*[textViewObjects count]))];    
     
     /*
     //ROTATE TEXT LABELS
@@ -143,17 +138,7 @@
     socialBox.transform = CGAffineTransformMakeTranslation(0, 15);
     englishBox.transform = CGAffineTransformMakeTranslation(0, 17);
     languageBox.transform = CGAffineTransformMakeTranslation(0, 20);
-    otherBox.transform = CGAffineTransformMakeTranslation(0, 13);
-     */
-}
-
-
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    otherBox.transform = CGAffineTransformMakeTranslation(0, 13);*/
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

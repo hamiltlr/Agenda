@@ -10,6 +10,50 @@
 
 @implementation QuickLinksDetails
 
+@synthesize webView, back, forward, reload;
+
+-(IBAction)goBack:(id)sender{
+    [webView goBack];
+    if ([webView canGoBack]) {
+        back.enabled = TRUE;
+    }else{
+        back.enabled = FALSE;
+    }
+    if ([webView canGoForward]) {
+        forward.enabled = TRUE;
+    }else{
+        forward.enabled = FALSE;
+    }
+}
+
+-(IBAction)goForward:(id)sender{
+    [webView goForward];
+    if ([webView canGoBack]) {
+        back.enabled = TRUE;
+    }else{
+        back.enabled = FALSE;
+    }
+    if ([webView canGoForward]) {
+        forward.enabled = TRUE;
+    }else{
+        forward.enabled = FALSE;
+    }
+}
+
+-(IBAction)reloadPage:(id)sender{
+    [webView reload];
+    if ([webView canGoBack]) {
+        back.enabled = TRUE;
+    }else{
+        back.enabled = FALSE;
+    }
+    if ([webView canGoForward]) {
+        forward.enabled = TRUE;
+    }else{
+        forward.enabled = FALSE;
+    }
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

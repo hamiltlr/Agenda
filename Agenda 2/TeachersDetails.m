@@ -9,6 +9,7 @@
 #import "TeachersDetails.h"
 
 @implementation TeachersDetails
+@synthesize lTeacherName,lTeacherRoom,lTeacherEmail,lTeacherPhone,lTeacherWeb;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

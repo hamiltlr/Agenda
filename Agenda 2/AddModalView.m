@@ -9,6 +9,28 @@
 #import "AddModalView.h"
 
 @implementation AddModalView
+@synthesize oClassName,oClassLocation,oClassPeriod,oClassTeacher,classNameString,classPeriodString,classTeacherString,classLocationString,delegate;
+
+-(IBAction)donePressed:(id)sender{
+    [self dismissModalViewControllerAnimated:YES];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ScheduleDonePressed" object:self];
+}
+
+-(IBAction)cancelPressed:(id)sender{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    oClassName.text=@"";
+    oClassLocation.text=@"";
+    oClassPeriod.text=@"";
+    oClassTeacher.text=@"";
+}
+
+- (void) viewWillDisappear:(BOOL) animated
+{
+    [[self delegate] setClassName:oClassName.text withLocation:oClassLocation.text withPeriod:oClassPeriod.text andTeacher:oClassTeacher.text];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

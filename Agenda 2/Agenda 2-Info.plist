@@ -8,8 +8,14 @@
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIconFile</key>
-	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>29x29.png</string>
+		<string>57x57.png</string>
+		<string>75x75.png</string>
+		<string>114x114.png</string>
+		<string>512x512</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>Lee-Hamilton.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -24,15 +30,19 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
+	<key>UILaunchImageFile~ipad</key>
+	<string>Default-ipad.png</string>
+	<key>UILaunchImageFile~iphone</key>
+	<string>Default-iphone.png</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

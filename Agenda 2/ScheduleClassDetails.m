@@ -9,6 +9,7 @@
 #import "ScheduleClassDetails.h"
 
 @implementation ScheduleClassDetails
+@synthesize className,teacherName,classPeriod,classLocation;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
