@@ -20,13 +20,13 @@
 
 -(void)createInputAccessoryView{
     inputAccView = [[UIView alloc]initWithFrame:CGRectMake(10.0, 0.0, [[UIScreen mainScreen] bounds].size.width, 40.0)]; //was 310
-    UIToolbar *toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0.0, 0.0, 320.0, 40.0)];
+    
+	UIToolbar *toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0.0, 0.0, 320.0, 40.0)];
     UIBarButtonItem *doneBttn = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(endEdit:)];
-    //UIBarButtonItem *flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    //UIBarButtonItem *checkBttn = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"checkbox.png"] style:UIBarButtonItemStylePlain target:self action:@selector(markOffItem:)];
-    //[toolbar setItems:[NSArray arrayWithObjects:doneBttn,flexible,checkBttn, nil]];
+
     [toolbar setItems:[NSArray arrayWithObject:doneBttn]];
     [inputAccView addSubview:toolbar];
+	
     [toolbar release];
     [doneBttn release];
 }
@@ -64,7 +64,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self createInputAccessoryView];
     
     textViewObjects = [[NSMutableArray alloc]init];
     labelObjects = [[NSMutableArray alloc]init];
@@ -84,67 +83,25 @@
             UILabel *tmpLbl = [[UILabel alloc]init];
             tmpLbl.text = [classes objectAtIndex:x];
             tmpLbl.backgroundColor = [UIColor clearColor];
-//          tmpLbl.textColor = [UIColor colorWithRed:15.0 green:0.0 blue:133.0 alpha:100];
+
             [tmpLbl setTextAlignment:UITextAlignmentRight];
             tmpLbl.transform = CGAffineTransformMakeRotation(-3.14159265/2);
             tmpLbl.frame = CGRectMake(1, (20 + (110*x) + (43*x)), 21, 110);
             
-            //NSLog(@"tmpTView == %@",tmpTView);
             [textViewObjects addObject:tmpTView];
-            //NSLog(@"[textViewObjects objectAtIndex:%i] == %@",x,[textViewObjects objectAtIndex:x]);
             
-            //NSLog(@"tmpLbl == %@",tmpLbl);
             [labelObjects addObject:tmpLbl];
             NSLog(@"[labelObjects objectAtIndex:%i] == %@",x,[labelObjects objectAtIndex:x]);
             [tmpTView release];
             [tmpLbl release];
             [self.subScrollView addSubview:[textViewObjects objectAtIndex:x]];
             [self.subScrollView addSubview:[labelObjects objectAtIndex:x]];
-                        
-            //UITextView *tmp = [textViewObjects objectAtIndex:0];
-            //tmp.text = @"test";
-            //NSLog(@"[textViewObjects objectAtIndex:0] == %@",[[textViewObjects objectAtIndex:0] text]);
     }
     
     NSLog(@"%i",(153*[textViewObjects count]));
     
     
     [self.subScrollView setContentSize:CGSizeMake(320, (153*[textViewObjects count]))];
-    
-    /*@catch (NSException *e) {
-        NSLog(@"*******************");
-        NSLog(@"*** ERROR: %@", e);
-        NSLog(@"*******************");
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"ERROR" message:@"An error occured while loading. Please try again." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
-        [alert show];
-        [alert release];
-    }*/
-    
-    /*
-    //ROTATE TEXT LABELS
-    math.transform = CGAffineTransformMakeRotation(-3.14159/2);
-    science.transform = CGAffineTransformMakeRotation(-3.14159/2);
-    social.transform = CGAffineTransformMakeRotation(-3.14159/2);
-    english.transform = CGAffineTransformMakeRotation(-3.14159/2);
-    language.transform = CGAffineTransformMakeRotation(-3.14159/2);
-    other.transform = CGAffineTransformMakeRotation(-3.14159/2);
-    
-    //Align labels with side of display
-    math.frame = CGRectMake(1, 20, 21, 55);
-    science.frame = CGRectMake(1, 173, 21, 76);
-    social.frame = CGRectMake(1, 326, 21, 63);
-    english.frame = CGRectMake(1, 480, 21, 75);
-    language.frame = CGRectMake(1, 633, 21, 95);
-    other.frame = CGRectMake(1, 780, 21, 60);
-    
-    //Adjust positioning of text boxes
-    mathBox.transform = CGAffineTransformMakeTranslation(0, 15);
-    scienceBox.transform = CGAffineTransformMakeTranslation(0, 16);
-    socialBox.transform = CGAffineTransformMakeTranslation(0, 15);
-    englishBox.transform = CGAffineTransformMakeTranslation(0, 17);
-    languageBox.transform = CGAffineTransformMakeTranslation(0, 20);
-    otherBox.transform = CGAffineTransformMakeTranslation(0, 13);
-     */
 }
 
 
