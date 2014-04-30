@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@class Agenda_2ViewController;
+@class Schedual;
 
-@interface Agenda_2AppDelegate : NSObject <UIApplicationDelegate>
+@interface Agenda_2AppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate>{
+    UIWindow *window;
+    UITabBarController *tabBarController;
+    //IBOutlet Schedual *schedual;
+}
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain) IBOutlet Agenda_2ViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+//@property (nonatomic, retain) IBOutlet Schedual *schedual;
 
 @end

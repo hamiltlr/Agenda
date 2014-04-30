@@ -1,14 +1,14 @@
 //
-//  Agenda_2ViewController.m
+//  AddTeacher.m
 //  Agenda 2
 //
-//  Created by Lee Hamilton on 10/24/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Lee Hamilton on 2/11/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Agenda_2ViewController.h"
+#import "AddTeacher.h"
 
-@implementation Agenda_2ViewController
+@implementation AddTeacher
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

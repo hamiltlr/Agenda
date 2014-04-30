@@ -1,14 +1,14 @@
 //
-//  Agenda_2ViewController.m
+//  Teachers.m
 //  Agenda 2
 //
-//  Created by Lee Hamilton on 10/24/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Lee Hamilton on 12/5/11.
+//  Copyright 2011 Lee Hamilton. All rights reserved.
 //
 
-#import "Agenda_2ViewController.h"
+#import "Teachers.h"
 
-@implementation Agenda_2ViewController
+@implementation Teachers
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

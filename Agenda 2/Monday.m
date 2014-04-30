@@ -1,14 +1,14 @@
 //
-//  Agenda_2ViewController.m
+//  Monday.m
 //  Agenda 2
 //
-//  Created by Lee Hamilton on 10/24/11.
+//  Created by Lee Hamilton on 11/7/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "Agenda_2ViewController.h"
+#import "Monday.h"
 
-@implementation Agenda_2ViewController
+@implementation Monday
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
