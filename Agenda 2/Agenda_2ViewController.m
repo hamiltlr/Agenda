@@ -131,36 +131,34 @@
     @try {
         
         NSMutableArray *dicts = [[NSMutableArray alloc]initWithCapacity:6];
-        for (int i=0; i<[dicts count]; i++) {
-            [dicts replaceObjectAtIndex:i withObject:[[NSMutableDictionary alloc]init]];
+
+        for (int i=0; i<6; i++) {
+            [dicts addObject:[[NSMutableDictionary alloc]init]];
         }
         
 		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 		NSString *filePath = [NSString stringWithFormat:@"%@/%i-%@.plist", [paths objectAtIndex:0], week, [self getDates:3]];
 		NSString *tablePath = [NSString stringWithFormat:@"%@/classTable.plist",[paths objectAtIndex:0]];
 		NSArray *classes = [NSArray arrayWithContentsOfFile:tablePath];
-		NSString *prefsPath = [NSString stringWithFormat:@"%@/prefs.plist", [paths objectAtIndex:0]];
+		//NSString *prefsPath = [NSString stringWithFormat:@"%@/prefs.plist", [paths objectAtIndex:0]];
 		
 		NSLog(@"Loop start");
 			
 		for (int x=0; x<[classes count]; x++) {
-			[monDict setObject:[[monObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-			[tuesDict setObject:[[tuesObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-			[wedDict setObject:[[wedObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-			[thursDict setObject:[[thursObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-			[friDict setObject:[[friObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
-			[otherDict setObject:[[otherObj.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
+            for (int i=0; i<[dicts count]; i++){
+                Day *tmp = [days objectAtIndex:i];
+                [[dicts objectAtIndex:i] setObject:[[tmp.textViewObjects objectAtIndex:x] text] forKey:[classes objectAtIndex:x]];
+            }
 		}
 		
-		NSMutableArray *dataArray = [[NSMutableArray alloc] initWithObjects:monDict,tuesDict,wedDict,thursDict,friDict,otherDict, nil];
-		NSLog(@"SAVE dataArray: %@",dataArray);
+		NSLog(@"SAVE dataArray: %@",dicts);
 		
 		NSLog(@"%@",filePath);
 		NSLog(@"dataArray writeToFile");
-		[dataArray writeToFile:filePath atomically:YES];
+		[dicts writeToFile:filePath atomically:YES];
 		NSLog(@"Saving data successful!");
-		
-		[dataArray release];
+        
+        [dicts release];
     }
     @catch (NSException *exception) {
         NSLog(@"******** ERROR *********");
@@ -186,30 +184,19 @@
     NSLog(@"filePath: %@", filePath);
     
     @try {
-    NSMutableArray *dataArray = [[NSMutableArray alloc]initWithContentsOfFile:filePath];
-    NSLog(@"LOAD dataArray: %@",dataArray);
-    
-    for (int x=0; x<[classes count]; x++) {
-        UITextView *tmp = [monObj.textViewObjects objectAtIndex:x];
-        tmp.text = [[dataArray objectAtIndex:0] valueForKey:[classes objectAtIndex:x]];
+        NSMutableArray *dataArray = [[NSMutableArray alloc]initWithContentsOfFile:filePath];
+        NSLog(@"LOAD dataArray: %@",dataArray);
         
-        tmp = [tuesObj.textViewObjects objectAtIndex:x];
-        tmp.text = [[dataArray objectAtIndex:1] valueForKey:[classes objectAtIndex:x]];
+        for (int x=0; x<[classes count]; x++) {
+            for (int i=0; i<[days count]; i++){
+                Day *tmpDay = [days objectAtIndex:i];
+                
+                UITextView *tmpTextView = [tmpDay.textViewObjects objectAtIndex:x];
+                tmpTextView.text = [[dataArray objectAtIndex:i] valueForKey:[classes objectAtIndex:x]];
+            }
+        }    
         
-        tmp = [wedObj.textViewObjects objectAtIndex:x];
-        tmp.text = [[dataArray objectAtIndex:2] valueForKey:[classes objectAtIndex:x]];
-        
-        tmp = [thursObj.textViewObjects objectAtIndex:x];
-        tmp.text = [[dataArray objectAtIndex:3] valueForKey:[classes objectAtIndex:x]];
-        
-        tmp = [friObj.textViewObjects objectAtIndex:x];
-        tmp.text = [[dataArray objectAtIndex:4] valueForKey:[classes objectAtIndex:x]];
-        
-        tmp = [otherObj.textViewObjects objectAtIndex:x];
-        tmp.text = [[dataArray objectAtIndex:5] valueForKey:[classes objectAtIndex:x]];
-    }    
-    
-    [dataArray release];
+        [dataArray release];
     }
     @catch (NSException *exception) {
         NSLog(@"Error: %@",exception);
@@ -266,29 +253,17 @@
     scrollView.contentSize = CGSizeMake(1920, 367); //was 1920x367
         
     //CGRectMake: x, y, width, height
-    monObj = [[Day alloc]init];
-    monObj.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-44);
-    [scrollView addSubview:monObj.view];
+    NSLog(@"in viewDidLoad before loop --------");
+    days = [[NSMutableArray alloc] init];
     
-    tuesObj = [[Tuesday alloc]init];
-    tuesObj.view.frame = CGRectMake(320, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-44); //CGRectGetHeight(self.view.bounds)
-    [scrollView addSubview:tuesObj.view];
-    
-    wedObj = [[Wednesday alloc]init];
-    wedObj.view.frame = CGRectMake(640, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-44);
-    [scrollView addSubview:wedObj.view];
-    
-    thursObj = [[Thursday alloc]init];
-    thursObj.view.frame = CGRectMake(960, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-44);
-    [scrollView addSubview:thursObj.view];
-    
-    friObj = [[Friday alloc]init];
-    friObj.view.frame = CGRectMake(1280, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-44);
-    [scrollView addSubview:friObj.view];
-    
-    otherObj = [[Other alloc]init];
-    otherObj.view.frame = CGRectMake(1600, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-44);
-    [scrollView addSubview:otherObj.view];
+    for (int i=0; i<6; i++){
+        [days addObject:[[Day alloc] init]];
+        Day *tmpDay = [days objectAtIndex:i];
+
+        NSLog(@"CGRectMake: %d",i*320);
+        tmpDay.view.frame = CGRectMake(i*320, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-44);
+        [scrollView addSubview:tmpDay.view];
+    }
     
     //Setup variables with current week, year, and weekday
     displayedYear = [[self getDates:3] intValue];
@@ -349,12 +324,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [scrollView release];
     [titleBar release];
-    [monObj release];
-    [tuesObj release];
-    [wedObj release];
-    [thursObj release];
-    [friObj release];
-    [otherObj release];
+    [days release];
 }
 
 @end
