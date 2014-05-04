@@ -7,12 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Monday.h"
-#import "Tuesday.h"
-#import "Wednesday.h"
-#import "Thursday.h"
-#import "Friday.h"
-#import "Other.h"
+#import "Day.h"
 
 @interface Agenda_2ViewController : UIViewController <UIScrollViewDelegate> { //<UIScrollViewDelegate/*, UINavigationBarDelegate*/>{
     BOOL saving;
@@ -30,12 +25,14 @@
     IBOutlet UIScrollView *scrollView;
     IBOutlet UINavigationBar *titleBar;
     
-    Monday *monObj;
+    /*Day *monObj;
     Tuesday *tuesObj;
     Wednesday *wedObj;
     Thursday *thursObj;
     Friday *friObj;
-    Other *otherObj;
+    Other *otherObj;*/
+    
+    NSMutableArray *days;
 }
 
 @property(nonatomic,retain) UIScrollView *scrollView;

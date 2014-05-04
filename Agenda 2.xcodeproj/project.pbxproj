@@ -10,6 +10,8 @@
 		84239F9914F6D3CC0098A8B4 /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 84239F9814F6D3CC0098A8B4 /* checkbox.png */; };
 		842D9902151D1DC8007A3DCD /* 108-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 842D9901151D1DC8007A3DCD /* 108-badge.png */; };
 		842D9907151D266E007A3DCD /* about-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 842D9906151D266E007A3DCD /* about-icon.png */; };
+		843EC000191696BE00176A73 /* Day.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843EBFFF191696BE00176A73 /* Day.xib */; };
+		843EC003191696CC00176A73 /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EC002191696CC00176A73 /* Day.m */; };
 		844185641518023D001FA120 /* Default-iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844185631518023D001FA120 /* Default-iphone@2x.png */; };
 		844B91D8144CBECD00F00A7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D7144CBECD00F00A7C /* UIKit.framework */; };
 		844B91DA144CBECD00F00A7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B91D9144CBECD00F00A7C /* Foundation.framework */; };
@@ -98,6 +100,9 @@
 		84239F9814F6D3CC0098A8B4 /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox.png; path = ../checkbox.png; sourceTree = "<group>"; };
 		842D9901151D1DC8007A3DCD /* 108-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "108-badge.png"; path = "../108-badge.png"; sourceTree = "<group>"; };
 		842D9906151D266E007A3DCD /* about-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-icon.png"; sourceTree = "<group>"; };
+		843EBFFF191696BE00176A73 /* Day.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Day.xib; sourceTree = "<group>"; };
+		843EC002191696CC00176A73 /* Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Day.m; sourceTree = "<group>"; };
+		843EC00419169A5600176A73 /* Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Day.h; sourceTree = "<group>"; };
 		844185631518023D001FA120 /* Default-iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-iphone@2x.png"; sourceTree = "<group>"; };
 		844B91D3144CBECD00F00A7C /* Agenda 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agenda 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B91D7144CBECD00F00A7C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -304,6 +309,9 @@
 				845EA8691468903B00F93DFF /* Monday.h */,
 				845EA86A1468903B00F93DFF /* Monday.m */,
 				845EA86B1468903B00F93DFF /* Monday.xib */,
+				843EC00419169A5600176A73 /* Day.h */,
+				843EC002191696CC00176A73 /* Day.m */,
+				843EBFFF191696BE00176A73 /* Day.xib */,
 				845EA86E1468906200F93DFF /* Tuesday.h */,
 				845EA86F1468906200F93DFF /* Tuesday.m */,
 				845EA8701468906200F93DFF /* Tuesday.xib */,
@@ -526,6 +534,7 @@
 				844185641518023D001FA120 /* Default-iphone@2x.png in Resources */,
 				842D9902151D1DC8007A3DCD /* 108-badge.png in Resources */,
 				842D9907151D266E007A3DCD /* about-icon.png in Resources */,
+				843EC000191696BE00176A73 /* Day.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +605,7 @@
 				84B3B70D14EB2661001DEAA5 /* Settings.m in Sources */,
 				84EBCA2D15163A4C0030F77C /* QuickLinksTableViewController.m in Sources */,
 				84EBCA3215163A800030F77C /* QuickLinksDetails.m in Sources */,
+				843EC003191696CC00176A73 /* Day.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

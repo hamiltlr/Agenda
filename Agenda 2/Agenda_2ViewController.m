@@ -57,7 +57,7 @@
         [weekFormatter setDateFormat:@"EEEE"];
         NSString *dayString = [weekFormatter stringFromDate:[NSDate date]];
         [weekFormatter release];
-        NSLog(@"%@",dayString);c
+        NSLog(@"%@",dayString);
         return dayString;
     
     }else if (arg == 2){
@@ -129,19 +129,17 @@
     NSLog(@"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
     NSLog(@"SAVE ALL DATA");
     @try {
-    
-		NSMutableDictionary *monDict = [[NSMutableDictionary alloc]init];
-		NSMutableDictionary *tuesDict = [[NSMutableDictionary alloc]init];
-		NSMutableDictionary *wedDict = [[NSMutableDictionary alloc]init];
-		NSMutableDictionary *thursDict = [[NSMutableDictionary alloc]init];
-		NSMutableDictionary *friDict = [[NSMutableDictionary alloc]init];
-		NSMutableDictionary *otherDict = [[NSMutableDictionary alloc]init];    
-			
+        
+        NSMutableArray *dicts = [[NSMutableArray alloc]initWithCapacity:6];
+        for (int i=0; i<[dicts count]; i++) {
+            [dicts replaceObjectAtIndex:i withObject:[[NSMutableDictionary alloc]init]];
+        }
+        
 		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 		NSString *filePath = [NSString stringWithFormat:@"%@/%i-%@.plist", [paths objectAtIndex:0], week, [self getDates:3]];
 		NSString *tablePath = [NSString stringWithFormat:@"%@/classTable.plist",[paths objectAtIndex:0]];
 		NSArray *classes = [NSArray arrayWithContentsOfFile:tablePath];
-		//NSString *prefsPath = [NSString stringWithFormat:@"%@/prefs.plist", [paths objectAtIndex:0]];
+		NSString *prefsPath = [NSString stringWithFormat:@"%@/prefs.plist", [paths objectAtIndex:0]];
 		
 		NSLog(@"Loop start");
 			
@@ -268,7 +266,7 @@
     scrollView.contentSize = CGSizeMake(1920, 367); //was 1920x367
         
     //CGRectMake: x, y, width, height
-    monObj = [[Monday alloc]init];
+    monObj = [[Day alloc]init];
     monObj.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-44);
     [scrollView addSubview:monObj.view];
     
